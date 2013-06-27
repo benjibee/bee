@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="hentry">
+	<header>
+		<h2 class="entry-title">{{ page.title }}</h2>
+		<time class="updated" datetime="{{ page.date }}" pubdate>{{ page.date | date_to_string }}</time>
+	</header>
+	<div class="entry-content">
+		{{ content }}
+	</div>
+</article>

@@ -1,0 +1,19 @@
+---
+layout: default
+title: benji bee blog
+---
+
+<div id="home">
+    {% for post in site.posts %}
+		<article class="hentry">
+			<header>
+				<h2 class="entry-title"><a href="/blog/{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+				<time class="updated" datetime="{{ post.date }}" pubdate>{{ post.date | date_to_string }}</time>
+			</header>
+			<div class="entry-content">
+				<p>{{ post.excerpt }}</p>
+			</div>
+		</article>
+		<hr class="article-seperator">
+    {% endfor %}
+</div>
