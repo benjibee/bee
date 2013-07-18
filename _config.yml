@@ -1,8 +1,12 @@
-name: Benji Bee
 title: benji bee
-pygments: false
+author: "Benji Bilheimer"
+description: "...a freelance photographer most recently based in Montr&eacute;al, Qu&eacute;bec specializing in journalistic, reportage-style photography projects around the world."
+
 analytics: UA-31898685-1
+
+pygments: false
 permalink: /blog/:categories/:title
+exclude: [13-7-16-backup.zip]
 
 flickr:
   enabled:         yes
