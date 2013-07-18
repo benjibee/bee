@@ -1,0 +1,17 @@
+---
+layout: default
+section: blog
+--- 
+{% for post in site.posts %}
+	<article class="hentry padded-content">
+		<header>
+			<h2 class="entry-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+			<time class="updated" datetime="{{ post.date }}" pubdate>{{ post.date | date_to_string }}</time>
+			<span class="hide author vcard fn" rel="author">Benji Bilheimer</span>
+		</header>
+		<div class="entry-content">
+			{{ post.excerpt }}
+		</div>
+	</article>
+	<hr class="article-seperator">
+{% endfor %}

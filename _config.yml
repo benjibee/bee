@@ -1,4 +1,12 @@
 name: Benji Bee
-title: benji bee blog
-pygments: true
+title: benji bee
+pygments: false
 analytics: UA-31898685-1
+permalink: /blog/:categories/:title
+
+flickr:
+  enabled:         yes
+  cache_dir:       ./_cache/flickr
+  shared_secret:   44a70c2a85d6d12e
+  api_key:         d90bdb7483138f04b01ffa48de331334
+  auth_token:      72157634461860929-a81fbb979f2cdf10

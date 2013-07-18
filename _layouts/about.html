@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article id="about" class="padded-content">
+	<!-- <img class="avatar" width="345" height="478" src="/assets/imgs/me.jpg" alt="This is me."> -->
+	<div class="bio">
+		{{ content }}
+	</div>
+	<aside class="info">
+		<ul class="clean-list">
+			<li><strong>Twitter</strong>: <a href="http://twitter.com/benjibee" target="_blank">@benjibee</a></li>
+			<li><strong>Flickr</strong>: <a href="http://flickr.com/benjibee" target="_blank">benjibee</a></li>
+		</ul>
+		<ul class="clean-list cities">
+			{% for city in page.cities %}
+			  <li{% if city == page.current %} class="current"{% endif %}>{{ city }}</li>
+			{% endfor %}
+		</ul>
+	</aside>
+</article>

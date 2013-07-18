@@ -1,0 +1,18 @@
+---
+layout: default
+section: photography
+permalink: /photosets/
+---
+<a href="#" id="nav-left" class="photo-nav disabled">&lang;</a>
+    <div id="photo-wrap">
+        <ul id="photo-list">
+        {% for photo in page.photos %}
+            <li class="photo">
+              <a href="{{ photo.urlFullSize }}" {% if photo.title != empty %} title="{{ photo.title }}" {% endif %} />
+                <img width="{{ photo.thumbWidth }}" height="{{ photo.thumbHeight }}" src="{{ photo.urlThumbnail }}" {% if photo.title != empty %} alt="{{ photo.title }}" {% endif %} class="{{ photo.thumbType }}" />
+              </a>
+             </li>
+        {% endfor %}
+        </ul>
+    </div>
+<a href="#" id="nav-right" class="photo-nav">&rang;</a>

@@ -1,10 +1,12 @@
 ---
 layout: default
+section: blog
 ---
-<article class="hentry">
+<article class="hentry padded-content">
 	<header>
 		<h2 class="entry-title">{{ page.title }}</h2>
 		<time class="updated" datetime="{{ page.date }}" pubdate>{{ page.date | date_to_string }}</time>
+		<span class="hide author vcard fn" rel="author">Benji Bilheimer</span>
 	</header>
 	<div class="entry-content">
 		{{ content }}
